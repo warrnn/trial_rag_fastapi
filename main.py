@@ -10,31 +10,22 @@ ml_models = {}
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Load embedding model
     ml_models["embedding_model"] = SentenceTransformer(ENV.EMBEDDING_MODEL_NAME)
 
-    # Load generator model (ONCE)
     model = AutoModelForCausalLM.from_pretrained(
         ENV.GENERATOR_MODEL_NAME,
         device_map="cuda",
         torch_dtype="auto",
         trust_remote_code=False,
     )
-
-    # Load tokenizer (ONCE)
-    tokenizer = AutoTokenizer.from_pretrained(ENV.GENERATOR_MODEL_NAME)
-
-    # Create the pipeline (ONCE) and store it in ml_models
-    ml_models["text_gen_pipeline"] = pipeline(
+    ml_models["generator_model"] = pipeline(
         "text-generation",
         model=model,
-        tokenizer=tokenizer,
+        tokenizer=AutoTokenizer.from_pretrained(ENV.GENERATOR_MODEL_NAME),
     )
 
-    print("Models and pipeline loaded successfully.")  # Good for debugging
     yield
 
-    # Clean up when server stops
     ml_models.clear()
 
 
@@ -53,8 +44,7 @@ def convert_sentence_to_embedding():
 def generate_answer():
     torch.random.manual_seed(0)
 
-    # Get the pipeline that was ALREADY loaded
-    pipe = ml_models.get("text_gen_pipeline")
+    pipe = ml_models.get("generator_model")
 
     if pipe is None:
         return {"error": "Text generation pipeline not loaded."}, 500
@@ -75,7 +65,7 @@ def generate_answer():
     generation_args = {
         "max_new_tokens": 500,
         "return_full_text": False,
-        "temperature": 0.0, 
+        "temperature": 0.0,
         "do_sample": False,
     }
 
