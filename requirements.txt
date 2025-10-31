@@ -1,0 +1,22 @@
+# Framework Web
+fastapi[all]
+
+# Server ASGI
+uvicorn
+
+# Model Retriever (Embedding)
+sentence-transformers
+
+# Model Generator (LLM)
+transformers
+torch
+
+# Database (PostgreSQL + pgvector driver)
+# psycopg2-binary
+# pgvector
+
+# External API Caller
+httpx
+
+# ENV Management
+python-dotenv
