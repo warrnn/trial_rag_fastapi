@@ -9,8 +9,7 @@ class Settings(BaseSettings):
     )
 
     EMBEDDING_MODEL_NAME: str
-    # GENERATOR_MODEL_NAME: str
-    # HUGGINGFACE_ACCESS_TOKEN: str
+    GENERATOR_MODEL_NAME: str
 
 
 ENV = Settings()
