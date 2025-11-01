@@ -1,0 +1,205 @@
+[
+    {
+        "timestamp": "2025-10-21 07:45:00",
+        "blood_glucose_mg_dl": 117,
+        "insulin_units": null,
+        "meal_description": "Nasi putih dengan soto ayam",
+        "condition_description": "Kepala pusing dan migrain, badan lemas"
+    },
+    {
+        "timestamp": "2025-10-21 14:00:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": 4,
+        "meal_description": "Nasi putih dengan ayam saus inggris",
+        "condition_description": "Kepala pusing dan migrain, badan lemas"
+    },
+    {
+        "timestamp": "2025-10-21 19:00:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": 6,
+        "meal_description": "Nasi putih dengan kuah rawon saja",
+        "condition_description": "Kepala pusing dan migrain, badan lemas"
+    },
+    {
+        "timestamp": "2025-10-22 08:15:00",
+        "blood_glucose_mg_dl": 380,
+        "insulin_units": 8,
+        "meal_description": "Nasi putih dengan sup kembang tahu dan 1 buah kekian babi",
+        "condition_description": "Sedikit meriang, kepala pusing, dan mual"
+    },
+    {
+        "timestamp": "2025-10-22 15:00:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": 5,
+        "meal_description": "Mie goreng jawa dan buah papaya",
+        "condition_description": "Sedikit meriang, kepala pusing, dan mual"
+    },
+    {
+        "timestamp": "2025-10-22 20:15:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": 12,
+        "meal_description": "Nasi putih dengan lidah babi goreng dan sambal korek",
+        "condition_description": "Sedikit meriang, kepala pusing, dan mual"
+    },
+    {
+        "timestamp": "2025-10-23 06:20:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": 6,
+        "meal_description": "Nasi putih dengan babi kecap dan sambal goreng tahu",
+        "condition_description": "Sedikit meriang, kepala pusing, dan mual"
+    },
+    {
+        "timestamp": "2025-10-23 08:40:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": null,
+        "meal_description": null,
+        "condition_description": "Setelah jalan pagi, kondisi badan drop dan keringat dingin, dan hampir vertigo. Setelah itu makan 4 batang coklat delfi, kondisi badan sudah membaik"
+    },
+    {
+        "timestamp": "2025-10-23 15:30:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": 8,
+        "meal_description": "Lontong dengan sayur bumbu manis dan minum kopi tanpa gula",
+        "condition_description": null
+    },
+    {
+        "timestamp": "2025-10-24 06:40:00",
+        "blood_glucose_mg_dl": 189,
+        "insulin_units": 6,
+        "meal_description": "Nasi putih dengan sayur asam dan ayam goreng",
+        "condition_description": null
+    },
+    {
+        "timestamp": "2025-10-24 13:45:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": 8,
+        "meal_description": "Nasi putih dengan sayur asam dan ikan asin",
+        "condition_description": null
+    },
+    {
+        "timestamp": "2025-10-24 19:30:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": 4,
+        "meal_description": "Nasi putih dengan ikan asin",
+        "condition_description": null
+    },
+    {
+        "timestamp": "2025-10-25 07:02:00",
+        "blood_glucose_mg_dl": 198,
+        "insulin_units": 3,
+        "meal_description": "Nasi putih dengan kuah rawon dan 1 buah perkedel, minum kopi tanpa gula",
+        "condition_description": null
+    },
+    {
+        "timestamp": "2025-10-25 13:10:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": null,
+        "meal_description": "Nasi putih dengan kuah rawon dan 1 buah perkedel, minum kopi tanpa gula",
+        "condition_description": "Kondisi fisik drop dari jam 9:30"
+    },
+    {
+        "timestamp": "2025-10-25 18:32:00",
+        "blood_glucose_mg_dl": 320,
+        "insulin_units": 8,
+        "meal_description": "Nasi putih dengan ikan asin",
+        "condition_description": null
+    },
+    {
+        "timestamp": "2025-10-26 06:38:00",
+        "blood_glucose_mg_dl": 280,
+        "insulin_units": 10,
+        "meal_description": "Nasi goreng merah",
+        "condition_description": null
+    },
+    {
+        "timestamp": "2025-10-26 12:30:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": null,
+        "meal_description": "Pangsit mie dengan daging babi cincang dan 2 buah pangsit kuah",
+        "condition_description": null
+    },
+    {
+        "timestamp": "2025-10-26 20:30:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": null,
+        "meal_description": null,
+        "condition_description": "Beraktivitas, membersihkan rumah dari air hujan"
+    },
+    {
+        "timestamp": "2025-10-27 02:10:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": null,
+        "meal_description": null,
+        "condition_description": "Membersihkan rumah dari air hujan pada jam 20:30 kemarin hari membuat kondisi fisik jadi drop dan keringat dingin, dan makan 4 potong coklat untuk menaikkan gula darah"
+    },
+    {
+        "timestamp": "2025-10-27 06:15:00",
+        "blood_glucose_mg_dl": 210,
+        "insulin_units": 4,
+        "meal_description": "Nasi putih dengan sambal goreng manisa dan ikan asin",
+        "condition_description": null
+    },
+    {
+        "timestamp": "2025-10-27 18:10:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": 6,
+        "meal_description": "Tahu campur dengan kikil sapi",
+        "condition_description": null
+    },
+    {
+        "timestamp": "2025-10-28 07:15:00",
+        "blood_glucose_mg_dl": 210,
+        "insulin_units": 5,
+        "meal_description": "Nasi putih dengan sop sayur dan 1 buah udang goreng dan 1 buah perkedel",
+        "condition_description": "Dari bangun tidur kondisi pusing, migrain, mual, dan pundak sakit"
+    },
+    {
+        "timestamp": "2025-10-28 15:05:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": 10,
+        "meal_description": "Nasi putih dengan soto ayam, dan 1 slice picnic roll",
+        "condition_description": "Pundak masih sakit dan migrain"
+    },
+    {
+        "timestamp": "2025-10-28 19:40:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": null,
+        "meal_description": "Setengah porsi ramen instan shin ramyeon dengan kerupuk rambak",
+        "condition_description": null
+    },
+    {
+        "timestamp": "2025-10-29 02:40:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": null,
+        "meal_description": null,
+        "condition_description": "Tubuh mengalami keringat dingin lalu makan 1 bungkus beng-beng, gula 2 strip kecil, dan sedikit buah melon"
+    },
+    {
+        "timestamp": "2025-10-29 08:20:00",
+        "blood_glucose_mg_dl": 298,
+        "insulin_units": 10,
+        "meal_description": "Nasi bungkus",
+        "condition_description": null
+    },
+    {
+        "timestamp": "2025-10-29 14:08:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": null,
+        "meal_description": "Nasi putih dengan sambal terasi dan telur asin",
+        "condition_description": null
+    },
+    {
+        "timestamp": "2025-10-30 07:40:00",
+        "blood_glucose_mg_dl": 192,
+        "insulin_units": null,
+        "meal_description": "Nasi putih dengan serundeng kelapa dan oseng sawi putih",
+        "condition_description": "Kondisi kepala pusing migrain"
+    },
+    {
+        "timestamp": "2025-10-30 14:00:00",
+        "blood_glucose_mg_dl": null,
+        "insulin_units": null,
+        "meal_description": "2 tusuk sate ayam, 1 buah gyoza, dan nasi bakar setengah porsi",
+        "condition_description": null
+    }
+]
