@@ -9,7 +9,8 @@ class Settings(BaseSettings):
     )
 
     EMBEDDING_MODEL_NAME: str
-    GENERATOR_MODEL_NAME: str
+    GEMINI_API_KEY: str
+    GEMINI_GENERATOR_MODEL: str
 
 
 ENV = Settings()
