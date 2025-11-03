@@ -6,6 +6,17 @@ user_charateristics_database = [
     "Suntik Insulin harian menggunakan Novorapid",
     "Sunti Insulin malam menggunakan Lantus",
     "Tidak minum obat pengontrol gula darah",
+    "Last hba1c: 5.4%",
+]
+
+hba1c_knowledge_database = [
+    # --- Fakta HbA1c ---
+    "HbA1c adalah tes darah yang mengukur rata-rata gula darah selama 3 bulan dan disajikan dalam persentase (%).",
+    "Hasil tes HbA1c mengindikasikan kadar rata-rata gula darah selama 2-3 bulan terakhir dan dikategorikan sebagai normal, prediabetes, atau diabetes.",
+    "eAG (estimated Average Glucose) adalah konversi nilai HbA1c (%) ke satuan mg/dl.",
+    "Rumus resmi untuk menghitung eAG (mg/dl) dari HbA1c (%) adalah: (28.7 * HbA1c) - 46.7",
+    "Rumus resmi untuk menghitung HbA1c (%) dari eAG (mg/dl) adalah: (eAG + 46.7) / 28.7",
+    "Interpretasi hasil HbA1c Normal: Kurang dari 5,7%; Prediabetes: 5,7% - 6,4%; Diabetes: 6,5% atau lebih tinggi.",
 ]
 
 knowledge_database = [
