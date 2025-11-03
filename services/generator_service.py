@@ -11,7 +11,7 @@ def execute_text_generator(
     retrieved_knowledge=None,
 ):
     if question is None:
-        return HTTPException(status_code=400, detail="No question provided")
+        raise HTTPException(status_code=400, detail="No question provided")
 
     try:
         client = genai.Client(api_key=ENV.GEMINI_API_KEY)
