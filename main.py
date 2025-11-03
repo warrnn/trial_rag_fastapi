@@ -4,13 +4,12 @@ from .config import ENV
 from sentence_transformers import SentenceTransformer, util
 from .database import (
     user_charateristics_database,
-    hba1c_knowledge_database,
     knowledge_database,
 )
 import json
 from pathlib import Path
 from .helpers.format_helper import format_history_entry_to_string
-from .services.generator_service import execute_text_generator, execute_hba1c_generator
+from .services.generator_service import execute_text_generator
 
 ASSETS = {}
 
@@ -21,10 +20,6 @@ async def lifespan(app: FastAPI):
 
     # Retriever Assets
     ASSETS["embedding_model"] = SentenceTransformer(ENV.EMBEDDING_MODEL_NAME)
-    ASSETS["hba1c_knowledge_data"] = hba1c_knowledge_database
-    # ASSETS["hba1c_knowledge_embeddings"] = ASSETS["embedding_model"].encode(
-    #     hba1c_knowledge_database, convert_to_tensor=True
-    # )
     ASSETS["knowledge_data"] = knowledge_database
     ASSETS["knowledge_embeddings"] = ASSETS["embedding_model"].encode(
         knowledge_database, convert_to_tensor=True
@@ -95,40 +90,5 @@ def exec_rag(question: str):
             context_string_biodata=context_string_biodata,
             context_string_history=context_string_history,
             retrieved_knowledge=retrieved_knowledge,
-        ),
-    }
-
-
-@app.get("/rag/generate-hba1c")
-def exec_hba1c():
-    user_biodata = ASSETS.get("user_charateristics_data")
-    user_history = ASSETS.get("user_history_data")
-    hba1c_knowledge_db = ASSETS.get("hba1c_knowledge_data")
-
-    if user_biodata is None or user_history is None or hba1c_knowledge_db is None:
-        raise HTTPException(status_code=500, detail="Failed to load AI assets")
-
-    # Fakta Pengetahuan hba1c
-    retrieved_hb1ac_knowledge = " ".join(hba1c_knowledge_db)
-
-    # Data Personal Log Terakhir
-    NUM_RECENT_LOGS = 2
-    recent_history_entries = user_history[-NUM_RECENT_LOGS:] if user_history else []
-
-    history_docs_to_inject = [
-        format_history_entry_to_string(entry) for entry in recent_history_entries
-    ]
-    context_string_history = " ".join(history_docs_to_inject)
-    if not context_string_history:
-        context_string_history = "Tidak ada data riwayat pasien."
-
-    # Data Personal Biodata
-    context_string_biodata = ". ".join(user_biodata).rstrip(".") + "."
-
-    return {
-        "answer": execute_hba1c_generator(
-            context_string_biodata=context_string_biodata,
-            context_string_history=context_string_history,
-            retrieved_hba1c_knowledge=retrieved_hb1ac_knowledge,
         ),
     }
