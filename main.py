@@ -28,7 +28,7 @@ async def lifespan(app: FastAPI):
     # User Data Assets
     ASSETS["user_charateristics_data"] = user_charateristics_database
     json_path = (
-        Path(__file__).parent / "technical_data" / "mom_medic_historical_data.json"
+        Path(__file__).parent / "user_log_data" / "mom_medic_historical_data.json"
     )
     with open(json_path, "r", encoding="utf-8") as f:
         user_history_data = json.load(f)
